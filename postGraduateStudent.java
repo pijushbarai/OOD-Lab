@@ -1,4 +1,4 @@
-public class postGraduateStudent extends student{
+public class PostGraduateStudent extends Student{
 
     @Override
     public void enroll() {

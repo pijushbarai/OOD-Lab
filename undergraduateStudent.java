@@ -1,6 +1,5 @@
-import java.util.jar.Attributes.Name;
 
-public class undergraduateStudent extends student{
+public class UnderGraduateStudent extends Student{
     @Override
     public void enroll() {
         // TODO Auto-generated method stub
