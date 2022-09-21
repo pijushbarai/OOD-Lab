@@ -4,10 +4,13 @@
 public class NotificationService{
     public static void main(String[] args) {
         NotificationFactory notificationFactory = new NotificationFactory();
-        Notification notification = notificationFactory.createNotification("SMS");
-        Notification notification2 = notificationFactory.createNotification("PUSH");
-        String str = "Hi everybody";
-        notification2.notifyUser(str);
-        notification.notifyUser(str);
+        Notification notification1 = notificationFactory.createNotification("Sms");
+        Notification notification2 = notificationFactory.createNotification("Push");
+        Notification notification3 = notificationFactory.createNotification("Email");
+        Notification notification4 = notificationFactory.createNotification("App");
+        notification2.notifyUser("hi");
+        notification1.notifyUser("Hi everyone");
+        notification3.notifyUser("How old are you");
+        notification4.notifyUser("4 notification");
     }
 }

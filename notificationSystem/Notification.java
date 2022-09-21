@@ -1,6 +1,6 @@
 
 public interface Notification{
-    public void notifyUser(String txt);
+    public void notifyUser(String string);
 
 }
 

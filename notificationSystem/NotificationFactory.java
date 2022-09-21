@@ -6,14 +6,16 @@ public class NotificationFactory {
             return null;
         }
         switch(channel){
-            case "SMS":
+            case "Sms":
                 return new SMSNotification();
-            case "EMAIL":
+            case "Email":
                 return new EmailNotification();
-            case "PUSH":
+            case "Push":
                 return new PushNotification();
+            case "App":
+                return new AppNotification();
             default:
-                throw new IllegalArgumentException("Unknown channel" + channel);
+                throw new IllegalArgumentException("Unknown channel " + channel);
         }
     }
 }
